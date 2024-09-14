@@ -1,3 +1,35 @@
+Para hacer funcionar configurar sqlite en env:
+DB_CONNECTION=sqlite
+#DB_HOST=127.0.0.1
+#DB_PORT=3306
+#DB_DATABASE=laravel
+#DB_USERNAME=root
+#DB_PASSWORD=
+
+posteriormente realizar :
+
+php artisan migrate
+
+esto crea el usuario super admin
+usuario: admin@admin.com
+password: password
+
+los usuarios pueden registrarse desde /register
+
+cada usuario puede ver todos los productos pero solo puede editar los propios
+el super_admin puede modificar los productos de todos
+se pueden crear roles y permisos 
+
+Librerías utilizadas:
+PHP debugbar
+Auth de laravel
+spatie roles
+yarjra datatables
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
